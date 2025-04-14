@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutrition Chatbot</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Nutrition Chatbot</h1>
+            <p>Get nutrition information for foods!</p>
+        </header>
+
+        <main>
+            <div class="chat-box">
+                <div id="chat-container">
+                    <!-- Chat messages will appear here -->
+                </div>
+
+                <div class="input-area">
+                    <div class="input-group">
+                        <input type="text" id="food-input" placeholder="Enter food (e.g., apple)">
+                        <input type="number" id="quantity-input" placeholder="Quantity (grams)" value="100">
+                        <button id="get-nutrition">Get Nutrition</button>
+                    </div>
+                    <p id="error-message"></p>
+                    <div class="buttons">
+                        <button id="list-foods">List of Known Foods</button>
+                        <button id="how-many-grams">How Many Grams?</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 Nutrition Chatbot. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="nutrition_data.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
